@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static  %}
+{% block title %} About {% endblock title %}
+
+{% block body %}
+  
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+      <img src="{% static 'assets/img/about.jpg' %}" class="img-fluid"  alt="">
+        <div class="section-title">
+          <h2>About</h2>
+          <p> </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Illustrator &amp; Web Developer</h3>
+            <p class="fst-italic">
+              Software Engineering graduate with fundamental knowledge of software design and development. 
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Birthday:</strong> 15 Aug 1999</li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Birth Place:</strong> Birgunj, Nepal</li>
+                   <li><i class="bi bi-rounded-right"></i> <strong>Phone:</strong> 8307929328 </li>
+                   <li><i class="bi bi-rounded-right"></i> <strong>Email:</strong> rubyshah343@gmail.com</li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Age:</strong> 25</li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Degree:</strong> Bachelor</li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Status:</strong> Married</li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Freelance:</strong> Available</li>
+                </ul>
+              </div>
+            </div>
+            <p>Seeking to utilize broad educational background with excellent analytical, technical and programming skills to thrive as an
+                entry-level software engineer.
+              </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+{% endblock body %}
+  

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %} My_Blogs {% endblock title %}
+
+{% block body %}
+  
+  <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Welcome to my Blog</h2>
+          
+        </div>
+
+        <div class="row">
+    {% for post in posts %}
+
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="row">
+            <div class="col-lg-4">
+                <img src="{{post.img.url}}"  alt="no-image">
+            </div>
+            <div class="icon"><i class="bi bi-briefcase"></i></div>
+
+                <h4 class="title"><a href="">{{post.title}}</a></h4>
+                <p class="description">{{post.description}}</p>
+                <h6>Posted on: <b>{{post.timestamp}}</b></h6>
+                <h6>Posted by: <b>{{post.auth_name}}</b></h6>
+                
+            </div>
+    {% endfor %}
+        </div>
+
+      </div>
+    </section>
+
+{% endblock body %}
+  
